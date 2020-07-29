@@ -1,6 +1,6 @@
 # Anchors Aweigh!
 
-[RUN IN WEB-MSX](https://webmsx.org/?ROM=https://github.com/MartinezTorres/anchors_aweigh/releases/download/v0.1-msxdev/anchors_aweigh.rom&CARTRIDGE1_FORMAT=KonamiSCC)
+[PLAY IN WebMSX](https://webmsx.org/?ROM=https://github.com/MartinezTorres/anchors_aweigh/releases/download/v0.1-msxdev/anchors_aweigh.rom&CARTRIDGE1_FORMAT=KonamiSCC)
 
 A puzzle game based on the Battleship game:
 https://en.wikipedia.org/wiki/Battleship_(puzzle)
