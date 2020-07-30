@@ -62,7 +62,7 @@ const char * const TEXT_INSTRUCTIONS_FULL[4] = {
 	"barcos hay en la fila o la columna."	
 	, 
 	"Una armada de vaixells de guerra esta\n"
-	"amagada en una graella de 10x10 caselles.\n"
+	"amagada en una graella de 10x10.\n"
 	"Cada vaixell ocupa caselles contigues,\n"
 	"de forma vertical o horitzontal.\n"
 	"Els vaixells no es toquen entre si,\n"
@@ -123,24 +123,25 @@ const char * const TEXT_INSTRUCTIONS_FULL_2[4] = {
 	"tambe l'aigua del voltant.\n"
 	"Quan totes les xifres de fila,\n"
 	"columna, i tipus de vaixell\n"
-	"siguin verdes, l'armada es\n"
-	"destruira.\n"
+	"siguin verdes, l'armada es destruira.\n"
 	"Pots desfer moviments, resetejar\n"
 	"el taulell, o, si no trobes\n"
 	"solucio, rendir-te.\n"
 	,
-	"GAMEPLAY:\n"
-	"You can mark cells as water, ship\n"
-	"part, or leave them empty.\n"
-	"For a ship to take form, you need to\n"
-	"mark the cells and also the water \n"
-	"around it.\n"
-	"Once all row and column numbers are\n"
-	"green, and the ship left count at\n"
-	"the bottom row is all zeros, the armada\n"
-	"will be automatically destroyed.\n"
-	"You can undo, reset the board, or if\n"
-	"you find no solution, surrender.\n"
+	"SPEELWIJZE:\n"
+    "Je kunt cellen markeren als water of\n"
+    "onderdeel van een schip, of leeg laten.\n"
+    "Om een schip te maken moet je cellen \n"
+    "als zodanig markeren, en ook het water\n"
+    "er omheen. Zodra de nummers van de\n"
+    "rijen en kolommen allemaal groen zijn\n"
+    "en de teller op de onderste rij die het\n"
+    "aantal overgebleven schepen aangeeft\n"
+    "op nul staat, zal de invasievloot auto-\n"
+    "matisch vernietigd worden. Het is mo-\n"
+    "gelijk om een zet terug te nemen, het\n"
+    "bord te resetten en ook, als je geen\n"
+    "oplossing kunt vinden, je over te geven."
 };
 
 static void opening_isr() {
@@ -457,6 +458,8 @@ static bool draw_opening() {
 					while (!msxhal_getch()) wait_frame();;
 
 					rectangle(0,0,255,192,0x00,FWhite+BBlack);
+                    if (language==3) textProperties.space_between_lines = 13;
+                    
 					write_message_2(0,   0, TEXT_INSTRUCTIONS_FULL_2[language], FWhite+BBlack);
 
 					wait_frame();
