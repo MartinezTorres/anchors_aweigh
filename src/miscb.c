@@ -184,7 +184,7 @@ void start_level_conclude_campaign() {
         IN_MODULE(qrcodegen, PAGE_D, {
         
             uint8_t pos  =  0;
-            pos = add_text("https://twitter.com/intent/tweet?hashtags=msxdev20%2Canchorsaweighmsx&text=",pos);
+            pos = add_text("https://twitter.com/intent/tweet?hashtags=sotanomsxbbs%2Canchorsaweighmsx&text=",pos);
             pos = add_text(TEXT_RANKS[language][rank],pos);
             pos = add_text(TEXT_ACHIEVEMENT_2[language],pos);
             pos = add_text(msg_minutes,pos);

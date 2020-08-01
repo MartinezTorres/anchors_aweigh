@@ -144,6 +144,17 @@ const char * const TEXT_INSTRUCTIONS_FULL_2[4] = {
     "oplossing kunt vinden, je over te geven."
 };
 
+
+const char * const TEXT_SOTANO[4] = { 
+	"GET IT FROM: SOTANOBBSMSX.ORG:22"
+	, 
+	"PILLALO EN: SOTANOBBSMSX.ORG:22"
+	, 
+	"AGAFA'L A: SOTANOBBSMSX.ORG:22"
+	,
+	"HAAL HET VAN: SOTANOBBSMSX.ORG:22"
+};
+
 static void opening_isr() {
 	
 	IN_MODULE(psg, PAGE_C, {
@@ -318,6 +329,21 @@ static bool draw_opening() {
 //	TMS99X8_memcpy(MODE2_ADDRESS_PG + 0x0000, &join_pattern[0x0000], 0x1800);    
 
 	draw_title();
+
+	textProperties.font_segment = MODULE_SEGMENT(font_tiny,PAGE_D);
+    textProperties.font_pts = font_tiny_pts;
+    textProperties.font_pos = font_tiny_pos;
+    textProperties.font_len = font_tiny_len;
+    textProperties.faster = true;
+    textProperties.x = 0;
+    textProperties.y = 186;
+    textProperties.sz = 1;
+    writeText(TEXT_SOTANO[language]);     
+	rectangle(0,185,textProperties.x-1,191,0x00,FWhite+BBlack);
+    textProperties.x = 0;
+    writeText(TEXT_SOTANO[language]);     
+    
+
 
 	TMS99X8.blankScreen = 1;
 	TMS99X8_syncRegister(1);

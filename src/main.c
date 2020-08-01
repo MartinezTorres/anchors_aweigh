@@ -24,6 +24,7 @@ int main(void) {
     msxhal_install_isr(main_isr);      
 
 	language = ENGLISH;
+	language = SPANISH;
 
 	while (true) {
 		CALL_B(opening, start_opening);
