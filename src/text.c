@@ -62,7 +62,7 @@ const char * const TEXT_RANKS[4][11] = {
     
 const char * const TEXT_RANKS_SHORT[4][11] = {
 	{ "Ensign", "Liutenant\n Junior", "Liutenant", "Liutenant\n Commander", "Commander", "Captain", "Rear\n Admiral", "Vice\n Admiral", "Admiral", "Fleet\n Admiral", "Admiral of\n the Navy" }, 
-	{ "Alferez", "Teniente\n Junior", "Teniente", "Teniente\n Comandante", "Comandante", "Capitan", "Contra\n almirante", "Vicev almirante", "Almirante", "Almirante\n General", "Almirante de\n la Armada" },
+	{ "Alferez", "Teniente\n Junior", "Teniente", "Teniente\n Comandante", "Comandante", "Capitan", "Contra\n almirante", "Vice\n almirante", "Almirante", "Almirante\n General", "Almirante de\n la Armada" },
 	{ "Alferes", "Tinent Jr.", "Tinent", "Tinent\n Comandant", "Comandant", "Capita", "Contra\nalmirall", "Vice\nalmirall", "Almirall", "Almirall\n General", "Almirall de\n l'Armada" },
 	{ "Adelborst", "Luitenant\n 3e klasse","Luitenant\n 2e klasse", "Luitenant\n 1e klasse", "Kolonel", "Kapitein", "Commandeur", "Viceadmiraal", "Admiraal", "Admiraal\n Generaal", "Admiraal\n ter Vloot" } };
     
