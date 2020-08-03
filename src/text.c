@@ -68,8 +68,8 @@ const char * const TEXT_RANKS_SHORT[4][11] = {
     
 const char * const TEXT_TIME_LEFT[4] = {
     "TIME LEFT:",
-    "TIEMPO RESTANTE:",
-    "TEMPS RESTANT:",
+    "TIEMPO:",
+    "TEMPS:",
     "TIJD OVER:"
 };
 
