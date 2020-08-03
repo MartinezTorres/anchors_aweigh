@@ -363,7 +363,7 @@ static bool draw_opening() {
     {
 		uint8_t c;
 		while ((c=msxhal_getch())==0) wait_frame();
-		if (c=='M') { bgm_menu(); return false; }
+		if (c=='M') { bgm_menu(); return true; }
 	}
     
     rectangle(128-104,96-32,127+104,95+32,0x00,FWhite+BBlack);

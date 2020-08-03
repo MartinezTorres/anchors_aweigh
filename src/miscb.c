@@ -266,6 +266,7 @@ void start_level_conclude_campaign() {
         while (msxhal_getch()) { }
         while (!msxhal_getch()) wait_frame();;
         status = LOST;
+        rank=0;
     }
 
 	music_paused = true;

@@ -779,7 +779,7 @@ void start_level() {
 		start_level_play();
 		if (game_type==CAMPAIGN) {
 			CALL_B(miscb, start_level_conclude_campaign);
-			if (status==LOST) return;
+			if (status==LOST && rank==0) return;
 		} else {
 			CALL_B(miscb, start_level_conclude_free_play);
 		}

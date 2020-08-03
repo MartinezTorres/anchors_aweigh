@@ -207,9 +207,9 @@ const char * const TEXT_GOOD_ENDING[4] = {
 };
 
 const char * const TEXT_BAD_ENDING[4] = {
-    "To the jail! The navy is not for cheaters!", 
-    "A la carcel! La armada no es para tramposos!",
-    "A la preso! L'armada no es per tramposos!",    
-    "Gevangenis! De marine is niet voor valsspelers."   
+    "To the jail!\n The navy is not for cheaters!", 
+    "A la carcel!\n La armada no es para tramposos!",
+    "A la preso!\n L'armada no es per tramposos!",    
+    "Gevangenis!\n De marine is niet\n voor valsspelers."   
 };
 
