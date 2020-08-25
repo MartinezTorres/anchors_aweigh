@@ -23,8 +23,11 @@ int main(void) {
     paged_isr.f = nullptr;
     msxhal_install_isr(main_isr);      
 
-	language = ENGLISH;
-	language = SPANISH;
+    if (SOTANO_EDITION) {
+        language = SPANISH;
+    } else {
+        language = ENGLISH;
+    }
 
 	while (true) {
 		CALL_B(opening, start_opening);

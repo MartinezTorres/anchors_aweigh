@@ -248,6 +248,7 @@ static bool update_legend_counts() {
 		for (uint8_t j=1; j<11; j++) {
 			uint8_t c = map_display[i][j];
 			if (c<=WATER) continue;
+            if (map_correctness[i][j]==false) continue;
 			if (c==SHIP_SUB) {
 				countShipsFound[0]++;
 				continue;

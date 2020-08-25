@@ -330,18 +330,21 @@ static bool draw_opening() {
 
 	draw_title();
 
-	textProperties.font_segment = MODULE_SEGMENT(font_tiny,PAGE_D);
-    textProperties.font_pts = font_tiny_pts;
-    textProperties.font_pos = font_tiny_pos;
-    textProperties.font_len = font_tiny_len;
-    textProperties.faster = true;
-    textProperties.x = 0;
-    textProperties.y = 186;
-    textProperties.sz = 1;
-    writeText(TEXT_SOTANO[language]);     
-	rectangle(0,185,textProperties.x-1,191,0x00,FWhite+BBlack);
-    textProperties.x = 0;
-    writeText(TEXT_SOTANO[language]);     
+    if (SOTANO_EDITION) {
+
+        textProperties.font_segment = MODULE_SEGMENT(font_tiny,PAGE_D);
+        textProperties.font_pts = font_tiny_pts;
+        textProperties.font_pos = font_tiny_pos;
+        textProperties.font_len = font_tiny_len;
+        textProperties.faster = true;
+        textProperties.x = 0;
+        textProperties.y = 186;
+        textProperties.sz = 1;
+        writeText(TEXT_SOTANO[language]);     
+        rectangle(0,185,textProperties.x-1,191,0x00,FWhite+BBlack);
+        textProperties.x = 0;
+        writeText(TEXT_SOTANO[language]);     
+    }
     
 
 

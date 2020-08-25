@@ -13,6 +13,9 @@ USING_MODULE(psg, PAGE_C);
 
 #include <resources.h>
 
+#define SOTANO_EDITION 0
+
+
 ////////////////////////////////////////////////////////////////////////
 // SOUND
 USING_MODULE(test_afb,PAGE_D);
